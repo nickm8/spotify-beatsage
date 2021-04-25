@@ -9,7 +9,7 @@ pyinstaller --onefile --icon=mapbuilder.ico --windowed mapbuilder.py
 # How to build locally
 1. Get the app running locally
 2. pyinstaller --onefile --icon=mapbuilder.ico --windowed mapbuilder.py
-3. copy templates folder into dist folder and run .exe
+3. copy templates folder and env.json into dist folder and run .exe
 
 # Edit beatsage build config
 DIFFICULTIES: Hard,Expert,ExpertPlus,Normal
