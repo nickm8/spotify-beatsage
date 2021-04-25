@@ -1,0 +1,19 @@
+*.toml*
+.vscode/
+
+# Ignore everything
+*
+# Whitelist anything that's a directory
+!*/
+# Only include files we need
+!*.md
+!*.py
+!*.png
+!*.ico
+!requirements.txt
+!env.json.example
+!.gitignore
+
+!templates/*
+!static/*/*
+!static/*/*/*
