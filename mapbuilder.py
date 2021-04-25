@@ -511,7 +511,7 @@ def main():
             sys.exit()
     app = QtWidgets.QApplication(sys.argv)
     w = QtWidgets.QWidget()
-    tray_icon = SystemTrayIcon(QtGui.QIcon("templates/images/beatsaber.png"), w)
+    tray_icon = SystemTrayIcon(QtGui.QIcon("static/images/beatsaber.png"), w)
     tray_icon.show()
     sys.exit(app.exec_())
 

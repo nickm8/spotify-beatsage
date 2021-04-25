@@ -1,0 +1,540 @@
+.logo {
+    margin-top: 0px;
+}
+.logo img {
+    height: 50px;
+    margin-top: -15px;
+}
+.username {
+    font-size: 150%;
+}
+.jumbotron {
+
+}
+.navbar, .navbar-brand  {
+    font-size: 1.3em;
+}
+.navbar-btn  {
+    font-size: 1.1em;
+}
+h2 {
+    font-size: 3.5em;
+}
+.footnote {
+    font-size: 90%;
+    float: right;
+    top: -30px;
+    padding-right:20px;
+}
+table i {
+    font-size: 2em !important;
+}
+table td {
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+    font-size: 130%
+}
+.index-head {
+    margin-top:-20px;
+    border-radius:15px;
+    padding:15px
+}
+.panel-title {
+    font-size: 2em !important;
+}
+.weather-info {
+    padding-left:30px;
+    font-size:1.8em
+}
+.todo td {
+    font-size: 200%;
+}
+.todo input[type=checkbox] {
+    transform: scale(2.5);
+}
+.todo-done {
+    text-decoration: line-through;
+    color: #999999;
+}
+.todo-check {
+    cursor: pointer;
+}
+.todo-title:focus {
+    background-color: #eeeeee;
+    color: #333333;
+    padding: 5px;
+    border-radius: 8px;
+    border: 3px solid #0793f0;
+    outline: 0px solid transparent;
+    box-shadow: 0 0 15px #0793f0;
+}
+.todo-button {
+    font-size: 150%;
+}
+.todo-panel-title {
+    margin-top: 10px;
+}
+.envvars {
+    word-break: break-all
+}
+.envtable {
+    max-height:500px;
+    overflow-y: scroll;
+    /*font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;*/
+    color:#fff;
+    background-color:#222222;
+}
+
+/*NEW CSS*/
+@font-face {
+    font-family: "Cooper Black";
+    src: url("fonts/cooper-black.ttf");
+}
+
+@font-face {
+    font-family: "Kingthings";
+    src: url("fonts/Kingthings_Calligraphica_Italic.ttf");
+}
+
+body {
+    font-family: "Helvetica" sans-serif;
+    background-color: #303030;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+body, html{
+    overflow-x: hidden;
+    height: 1500px;
+}
+
+#wrapper  {
+    width: 95%;
+    height: 100%;
+    z-index: -5;
+    text-align: center;
+    display: inline;
+}
+
+#bignose {
+    height: 100px;
+    position: relative;
+    top: -6px;
+    filter: drop-shadow(6px 4px 2px #222);
+    z-index: -1;
+}
+
+#title {
+    font-family: "Cooper Black";
+    font-size: 74px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    padding: 7px 5px 0px 0;
+    text-shadow: 8px 5px 0px #222;
+    height: 125px;
+}
+
+#container{
+    width: 570px;
+    height: 512px;
+    text-align: center;
+    z-index: 3;
+    margin: -24px auto auto auto;
+}
+
+#control-panel {
+    z-index: 1;
+    margin: 20px 0 0 0;
+    display: inline-block;
+}
+
+#peasant {
+    position: relative;
+    transform: rotate(21deg);
+    width: 91%;
+    display: block;
+    z-index: 4;
+    -webkit-filter: drop-shadow(33px 22px 4px #222);
+    filter: drop-shadow(33px 22px 4px #222);
+    margin: -53% 0% 0% -38%;
+}
+
+#peasant-container {
+    width: 99%;
+    /* background-color: #ebebeb; */
+    position: relative;
+    float: left;
+    top: -90%;
+}
+
+#bubble
+{
+    position: absolute;
+    width: 330px;
+    background: #EDEEEE;
+    border-radius: 10px;
+    border: #7F7F7F solid 2px;
+    top: -38%;
+    left: 31.6%;
+    z-index: 5;
+    color: black;
+    font-size: 29px;
+    font-family: Kingthings;
+    vertical-align: middle;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    display: none;
+    line-height: 200px;
+    padding: 12px;
+}
+
+#bubble-text {
+    display: inline-block;
+    vertical-align: text-bottom;
+    height: 90%;
+    width: 100%;
+    text-align: center;
+    line-height: 22px;
+    padding: 0 0px 2px 0;
+}
+
+#bubble:before
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 10px 20px 10px 0;
+    border-color: transparent #7F7F7F;
+    display: block;
+    width: 0;
+    z-index: 0;
+    left: -22px;
+    top: 8px;
+}
+
+#bubble:after
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 9px 19px 9px 0;
+    border-color: transparent #ebebeb;
+    display: block;
+    width: 0;
+    z-index: 1;
+    left: -18px;
+    top: 9px;
+}
+
+.media-button {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 27px 6px;
+    cursor: pointer;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: -5px 12px;
+    border-radius: 12px;
+    user-select: none;
+    width: 157px;
+    height: 125px;
+    box-shadow: 10px 10px 20px #222;
+    font-size: 85px;
+}
+
+a.media-button{
+    color: white;
+}
+
+a.media-button:active{
+    color: #FF3F18;
+}
+
+a.media-button:hover {
+    color: white;
+}
+
+a.media-button:visited {
+    color: white;
+}
+
+#suggest-song-panel {
+    background-color: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 0 3px;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    line-height: 13px;
+    border-radius: 12px;
+    user-select: none;
+    width: 500px;
+    height: 182px;
+    position: relative;
+    /* font-size: 13px; */
+    padding: 17px;
+    box-shadow: 10px 10px 20px #222;
+}
+
+input[type=text], select, textarea {
+    width: 98.9%;
+    height: 42px;
+    padding: 12px 18px 12px 18px;
+    border: 1px groove lightgrey;
+    border-radius: 8px;
+    resize: vertical;
+    color: black;
+    background-color: gainsboro;
+    text-align: left;
+    font-size: 18px;
+    margin: -4px 0 1px 1px;
+}
+
+#search-entry {
+    padding: 12px 0px 0px 3px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 7px;
+    height: 64px;
+    width: 98.6%;
+    margin: 4px 0 0 4px;
+}
+
+#search-button {
+    background-color: black;
+    color: white;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    margin: -42px 0 0 420px;
+    z-index: 2;
+    font-size: 22px;
+    border-radius: 7px;
+    padding: 9px 0 0 3px;
+}
+
+#search-results {
+    background-color: #fff;
+    position: absolute;
+    width: 421px;
+    height: auto;
+    margin: -3px 0 0 3px;
+    z-index: 1;
+    border-radius: 7px;
+    padding: 0px 0 7px 0;
+    display: none;
+    border: 1px groove grey;
+}
+
+#search-results button {
+    float: left;
+    width: 97.7%;
+    margin: 5px 5px 0px 5px;
+    display: block;
+    padding: 9px 8px;
+    cursor: pointer;
+    font-family: verdana;
+    font-style: italic;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#song-prefix {
+    font-style: italic;
+}
+
+#selected-song {
+    width: 95%;
+    height: 37px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    padding: 12px 0 0px 0px;
+    vertical-align: middle;
+    margin: 1px 0px 0px 9px;
+}
+
+#add-song-to-share {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 0px 0px -228px;
+    cursor: pointer;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    border-radius: 8px;
+    user-select: none;
+    width: 225px;
+    height: 41px;
+    font-size: 20px;
+    padding: 9px 9px 9px 13px;
+    position: absolute;
+    box-shadow: 0px 0px 1px #222;
+}
+
+#add-song-to-queue {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 0px 0px 4px;
+    cursor: pointer;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    border-radius: 8px;
+    user-select: none;
+    width: 225px;
+    height: 42px;
+    font-size: 20px;
+    padding: 9px 18px 9px 9px;
+    position: absolute;
+    box-shadow: 0px 0px 1px #222;
+}
+
+#request-song {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 0px 0px -228px;
+    cursor: pointer;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    border-radius: 8px;
+    user-select: none;
+    width: 457.5px;
+    height: 41px;
+    font-size: 20px;
+    padding: 9px 9px 9px 13px;
+    position: absolute;
+    box-shadow: 0px 0px 1px #222;
+}
+
+a.add-song-button{
+    color: white;
+}
+
+a.add-song-button:hover {
+    color: white;
+}
+
+a.add-song-button:visited {
+    color: white;
+}
+
+
+#currently-playing-module {
+    background-color: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 34px 0px 0px;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    line-height: 13px;
+    border-radius: 12px;
+    user-select: none;
+    width: 57.4%;
+    height: 450px;
+    font-size: 13px;
+    padding: 17px;
+    box-shadow: 10px 10px 20px #222;
+    float: right;
+}
+
+#align-title {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+#song-title {
+    font-size: 20px;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    margin: -5px 0 5px 0;
+    height: 95px;
+    line-height: 95px;
+    text-align: center;
+    text-shadow: 0px 0px 0px #222;
+}
+
+#song-link {
+    color: black;
+}
+
+a.song-link {
+    color: black;
+}
+
+a.song-link:hover {
+    color: black;
+}
+
+a.song-link:visited {
+    color: black;
+}
+
+#currently-playing-timer {
+    height: 25px;
+    position: relative;
+    background: #000;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 5px;
+    padding: 0px;
+    margin: 7px 0 0 4px;
+    width: 97%;
+}
+
+#time {
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 19px;
+    z-index: 1;
+}
+
+#progress{
+    background-color: #FF3F18;
+    height: 25px;
+    width: 0%;
+    position: relative;
+    margin: -2px 0 0 0;
+    padding: 0px 0px 0px 0;
+    border-radius: 3px;
+}
+
+
+#album-art {
+    height: 65%;
+    width: 97%;
+    border-radius: 8px;
+    margin: 15px 0 0 0;
+    position: relative;
+    box-shadow: 3px 3px 12px #222;
+}
