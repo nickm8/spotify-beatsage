@@ -379,7 +379,7 @@ class SystemTrayIcon(QtWidgets.QSystemTrayIcon):
                 start_index = responseBody.index(find)
                 youtube_id = responseBody[start_index:start_index+19]
 
-                youtube_url = YOUTUBE_BASE_URL+youtube_id
+                youtube_url = f'{YOUTUBE_BASE_URL}/{youtube_id}'
                 logging.info("youtube_url: " + youtube_url)
 
                 url = BEATSAGE_BASEURL+"/beatsaber_custom_level_create"
